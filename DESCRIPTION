@@ -13,4 +13,5 @@ Imports:
     data.table,
     magrittr,
     lubridate,
-    dplyr
+    dplyr,
+    curl
