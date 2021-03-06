@@ -79,7 +79,7 @@ dtDownloadCurrentMonthSilsoSunspotsTimeSeries <- function() {
   # 2. fetching the current month's data ---------------------------------------
   dtCurrentMonthSunspots <- tryCatch(expr = {
     message("Fetching the SILSO data on the sunspots number for the current month... ")
-    read.table(file = "http://sidc.be/silso/DATA/EISN/EISN_current.csv", sep = ",",
+    utils::read.table(file = "http://sidc.be/silso/DATA/EISN/EISN_current.csv", sep = ",",
                header = FALSE, dec = ".", stringsAsFactors = FALSE,
                col.names = cCurrentMonthColNames,
                colClasses = cCurrentMonthColTypes) %>%
